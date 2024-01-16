@@ -13,6 +13,7 @@ def get_arguments():
     options, arguments = parser.parse_args()
     return options
 def scan(ip):
+    #test2
     #use ARP to ask who has target IP
     arp_request = scapy.ARP(pdst=ip)
     #set destination MAC to brodcast MAC
