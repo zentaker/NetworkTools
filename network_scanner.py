@@ -4,6 +4,7 @@ import scapy.all as scapy
 import optparse
 
 
+
 ##listar dispositivos
 #scapy.arping(ip, iface=iface)
 
@@ -12,6 +13,9 @@ def get_arguments():
     parser.add_option("-t", "--target", dest="target", help="Target IP / IP range.")
     options, arguments = parser.parse_args()
     return options
+
+
+
 def scan(ip):
     #test2
     #use ARP to ask who has target IP
